@@ -14,7 +14,6 @@ CREATE OR REPLACE PROCEDURE public.refresh_foreign_tables(
     pg_schema_name TEXT  -- PostgreSQL schema to create foreign tables in
 )
 LANGUAGE plpgsql
-STRICT
 AS $BODY$
 DECLARE
     create_sql_var TEXT;
